@@ -4,11 +4,15 @@ using UnityEngine.UI;
 
 public class Card : MonoBehaviour
 {
+    #region Variables
+
     public Button button;
-    private bool isCouro = false;
+    public static bool isCouro = false;
     public int cardIdentification;
 
     private GameManager gameManager;
+
+    #endregion
 
     void Start()
     {
@@ -32,8 +36,10 @@ public class Card : MonoBehaviour
         {
             if (gameManager.chosenCard1 != -1 && gameManager.chosenCard2 != -1)
             {
-                StartCoroutine(DelaySeconds());
                 isCouro = true;
+
+                StartCoroutine(DelaySeconds());
+                
             }
         }
     }
@@ -42,19 +48,19 @@ public class Card : MonoBehaviour
     {
         if (gameManager.chosenCard1 != gameManager.chosenCard2)
         {
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(1);
 
             gameManager.NotMatch();
 
-            isCouro = false;
         }
         else
         {
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(1);
 
             gameManager.Match(); 
 
-            isCouro = false;
         }
+
+        //isCouro = false;
     }
 }

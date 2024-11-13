@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 992933337432919794}
   - component: {fileID: 4697039966876017477}
+  - component: {fileID: 2066502416064812181}
   m_Layer: 5
   m_Name: Card08
   m_TagString: Untagged
@@ -51,6 +52,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 0}
+  cardIdentification: 0
+--- !u!95 &2066502416064812181
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462350366165177691}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3b154a67be9747142ae3412d3e4e6dee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8097291313362958827
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,3 +294,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 0}
   cardValue: 8
+  isChosen: 0
+  cardPlacement: 0

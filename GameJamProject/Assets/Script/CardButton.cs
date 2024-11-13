@@ -4,13 +4,16 @@ using UnityEngine.UI;
 
 public class CardButton : MonoBehaviour
 {
+    #region Variables
+
     public Button button;
     public int cardValue;
     public bool isChosen = false;
     public int cardPlacement;
     
-
     private GameManager gameManager;
+
+    #endregion
 
     private void Start()
     {
@@ -20,6 +23,8 @@ public class CardButton : MonoBehaviour
         Card parentScript = GetComponentInParent<Card>();
         cardPlacement = parentScript.cardIdentification;
     }
+
+    #region Functions
 
     public void buttonClick()
     {
@@ -51,7 +56,8 @@ public class CardButton : MonoBehaviour
                 gameManager.targetID2 = cardPlacement;
             }
         }
-
         
     }
+
+    #endregion
 }
