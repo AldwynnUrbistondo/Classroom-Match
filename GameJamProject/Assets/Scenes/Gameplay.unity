@@ -1309,16 +1309,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardPrefabs:
-  - {fileID: 5818744879122952239, guid: 82161841ef3c350449be3452860bc7e3, type: 3}
-  - {fileID: 3287144207040254771, guid: d1919dfbaee54b3419f373a466ae3b7c, type: 3}
-  - {fileID: 8687062488223416864, guid: 2059b581e3d5de6418b37da78c6dde1d, type: 3}
-  - {fileID: 7783664362874149373, guid: a6cb6620e3ade544e83645837efc6b5b, type: 3}
-  - {fileID: 8268589163461613185, guid: 05fed634b3ed4fe42aa4f2685c40956c, type: 3}
-  - {fileID: 5624908919339835274, guid: f5d6409d57c258144be13c124fe3d21a, type: 3}
-  - {fileID: 4746656338189282134, guid: da8947e03a71f1f4aa1ae5c310afc23e, type: 3}
-  - {fileID: 4614108361496113407, guid: 5fa8ef188015d654889bf3975b3e061c, type: 3}
-  - {fileID: 1462350366165177691, guid: aea875995b89b3544b9b3ab489d60d3f, type: 3}
-  - {fileID: 845263123469958396, guid: e6ae35f7e6edd904c8e13dccbb251760, type: 3}
+  - {fileID: 5091995018844372174, guid: 77e3d92c92285e7498329dca9459a8ec, type: 3}
+  - {fileID: 7525743235585951113, guid: 449699f75adcc4146beee21c5c4e393b, type: 3}
+  - {fileID: 8554080221334369349, guid: 4a9c63bd72e23f540ad0eba00b264f05, type: 3}
+  - {fileID: 5272633721796216774, guid: 0088cb9fd985a684c905d0519f84045c, type: 3}
+  - {fileID: 7338704176220477164, guid: 00471ae87cf7dc54f85decd441cd898f, type: 3}
+  - {fileID: 5623106490260699348, guid: 38e236870d7a94d48a8a12068888db41, type: 3}
+  - {fileID: 3422157176078315865, guid: 88b883919d4db264ebcaab1c857f03c5, type: 3}
+  - {fileID: 7469299580265714994, guid: 12d54849035ea664eb754873ed3765a8, type: 3}
+  - {fileID: 5820914293462698183, guid: 07624c30dea0e4e439f5c3c2ee339a39, type: 3}
+  - {fileID: 1615056997046981888, guid: 9760c46d1bcfd1c418b2cd70a4f2b1c2, type: 3}
   grid: {fileID: 2114675648}
   canClick: 1
   chosenCard1: -1
@@ -1327,9 +1327,7 @@ MonoBehaviour:
   targetID1: -1
   targetID2: -1
   player1ScoreText: {fileID: 355127138}
-  player1Score: 0
   player2ScoreText: {fileID: 886912636}
-  player2Score: 0
   player1Turn: 0
   player2Turn: 0
   matches: 0
@@ -1594,8 +1592,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -33}
-  m_SizeDelta: {x: 589.0609, y: 407.6667}
+  m_AnchoredPosition: {x: 0.99804, y: -34.1133}
+  m_SizeDelta: {x: 855.7, y: 410.2089}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2114675650
 MonoBehaviour:
@@ -1617,7 +1615,7 @@ MonoBehaviour:
   m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 85, y: 92.17}
-  m_Spacing: {x: 30.9, y: 14.8}
+  m_CellSize: {x: 120, y: 100}
+  m_Spacing: {x: 30, y: 5}
   m_Constraint: 0
   m_ConstraintCount: 2

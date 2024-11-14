@@ -83,6 +83,7 @@ public class GameManager : MonoBehaviour
             {
                 timeIsRunning = false;
                 timeOut = true;
+                canClick = false;
                 NotMatch();
             }
         }
@@ -123,6 +124,7 @@ public class GameManager : MonoBehaviour
         popUpAnim.SetTrigger("default");
 
         player1Turn = true;
+        Debug.Log("==============Player 1 Turn==============");
 
         canClick = true;
 
@@ -196,11 +198,13 @@ public class GameManager : MonoBehaviour
         {
             player1Score++;
             player1ScoreText.text = $"Player 1: {player1Score}";
+            Debug.Log("Player 1 got a point");
         }
-        else
+        else if (player2Turn)
         {
             player2Score++;
             player2ScoreText.text = $"Player 2: {player2Score}";
+            Debug.Log("Player 2 got a point");
         }
 
         matches++;
@@ -233,7 +237,7 @@ public class GameManager : MonoBehaviour
 
             p1Text.enabled = false;
             p2Text.enabled = true;
-            Debug.Log("Player 2 Turn");
+            Debug.Log("==============Player 2 Turn==============");
 
         }
         else
@@ -243,7 +247,7 @@ public class GameManager : MonoBehaviour
 
             p1Text.enabled = true;
             p2Text.enabled = false;
-            Debug.Log("Player 1 Turn");
+            Debug.Log("==============Player 1 Turn==============");
         }
 
         StartCoroutine(Turn());
