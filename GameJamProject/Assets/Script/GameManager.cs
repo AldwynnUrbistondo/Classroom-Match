@@ -45,8 +45,8 @@ public class GameManager : MonoBehaviour
 
     [Header("PopUp")]
     public Image popUpBackground;
-    public TextMeshProUGUI p1Text;
-    public TextMeshProUGUI p2Text;
+    public Image p1Text;
+    public Image p2Text;
     public TextMeshProUGUI gameOverText;
     public TextMeshProUGUI textMatch;
 
@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour
     public AudioClip notMatchSound;
     public AudioClip timeOutSound;
     public AudioClip gameOverSound;
+
     #endregion
 
     void Start()
