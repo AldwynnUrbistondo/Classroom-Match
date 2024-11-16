@@ -223,7 +223,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -27, y: 32.816}
+  m_AnchoredPosition: {x: -20, y: 51.327}
   m_SizeDelta: {x: 248.1638, y: 87.3269}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &447258407
@@ -248,8 +248,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Player 1:  10'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d112cb961bfc1344cb0915c3c8336d51, type: 2}
-  m_sharedMaterial: {fileID: 7525715725597983040, guid: d112cb961bfc1344cb0915c3c8336d51, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1215c586b9b0f40479c2d1fc24fa7ac7, type: 2}
+  m_sharedMaterial: {fileID: 9063340227781455692, guid: 1215c586b9b0f40479c2d1fc24fa7ac7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -382,8 +382,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Play Again
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d112cb961bfc1344cb0915c3c8336d51, type: 2}
-  m_sharedMaterial: {fileID: 7525715725597983040, guid: d112cb961bfc1344cb0915c3c8336d51, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1215c586b9b0f40479c2d1fc24fa7ac7, type: 2}
+  m_sharedMaterial: {fileID: 9063340227781455692, guid: 1215c586b9b0f40479c2d1fc24fa7ac7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -618,8 +618,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -2256291859449093197, guid: 5389b849c68e5a74690494c22fef6f7c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -670,7 +670,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -27.849, y: -36}
+  m_AnchoredPosition: {x: -20, y: -36}
   m_SizeDelta: {x: 248.1638, y: 87.3269}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1228180249
@@ -695,8 +695,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Player 2:  10'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d112cb961bfc1344cb0915c3c8336d51, type: 2}
-  m_sharedMaterial: {fileID: 7525715725597983040, guid: d112cb961bfc1344cb0915c3c8336d51, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1215c586b9b0f40479c2d1fc24fa7ac7, type: 2}
+  m_sharedMaterial: {fileID: 9063340227781455692, guid: 1215c586b9b0f40479c2d1fc24fa7ac7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -912,8 +912,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Lol
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d112cb961bfc1344cb0915c3c8336d51, type: 2}
-  m_sharedMaterial: {fileID: 7525715725597983040, guid: d112cb961bfc1344cb0915c3c8336d51, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1215c586b9b0f40479c2d1fc24fa7ac7, type: 2}
+  m_sharedMaterial: {fileID: 9063340227781455692, guid: 1215c586b9b0f40479c2d1fc24fa7ac7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1102,8 +1102,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -2256291859449093197, guid: 5389b849c68e5a74690494c22fef6f7c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1179,8 +1179,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d112cb961bfc1344cb0915c3c8336d51, type: 2}
-  m_sharedMaterial: {fileID: 7525715725597983040, guid: d112cb961bfc1344cb0915c3c8336d51, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1215c586b9b0f40479c2d1fc24fa7ac7, type: 2}
+  m_sharedMaterial: {fileID: 9063340227781455692, guid: 1215c586b9b0f40479c2d1fc24fa7ac7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
