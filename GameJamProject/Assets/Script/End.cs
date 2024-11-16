@@ -2,26 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class End : MonoBehaviour
 {
     public TextMeshProUGUI winner;
     public TextMeshProUGUI player1ScoreText;
     public TextMeshProUGUI player2ScoreText;
+    public Sprite[] PlayerWin;
+    public Image WinCondition;
     
     void Start()
     {
         if (GameManager.player1Score == GameManager.player2Score)
         {
-            winner.text = "TIE!";
+            WinCondition.sprite = PlayerWin[2];
         }
         else if (GameManager.player1Score > GameManager.player2Score)
         {
-            winner.text = "Player 1 Win!!!";
+            WinCondition.sprite = PlayerWin[0];
         }
         else
         {
-            winner.text = "Player 2 Win!!!";
+            WinCondition.sprite = PlayerWin[1];
         }
 
         player1ScoreText.text = "Player 1: " + GameManager.player1Score;
