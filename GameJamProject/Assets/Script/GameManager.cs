@@ -62,6 +62,7 @@ public class GameManager : MonoBehaviour
     public AudioClip timeOutSound;
     public AudioClip gameOverSound;
     public AudioClip cardClickSound;
+    public AudioClip turnSound;
 
     [Header("Points")]
     public GameObject player1PointsImage;
@@ -155,6 +156,9 @@ public class GameManager : MonoBehaviour
         popUpBackground.enabled = true;
 
         popUpAnim.SetTrigger("pop");
+
+        audioSource.clip = turnSound;
+        audioSource.Play();
 
         yield return new WaitForSeconds(2f);
 
@@ -281,6 +285,7 @@ public class GameManager : MonoBehaviour
 
     public void NextTurn()
     {
+
         if (player1Turn == true)
         {
             player1Turn = false;
@@ -311,6 +316,9 @@ public class GameManager : MonoBehaviour
         popUpBackground.enabled = true;
 
         popUpAnim.SetTrigger("pop");
+
+        audioSource.clip = turnSound;
+        audioSource.Play();
 
         yield return new WaitForSeconds(2f);
 
