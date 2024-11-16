@@ -16,6 +16,7 @@ public class Card : MonoBehaviour
 
     void Start()
     {
+
         button = GetComponentInChildren<Button>();
         gameManager = FindObjectOfType<GameManager>();
 
@@ -48,14 +49,18 @@ public class Card : MonoBehaviour
     {
         if (gameManager.chosenCard1 != gameManager.chosenCard2)
         {
-            yield return new WaitForSeconds(1);
+            gameManager.timeIsRunning = false;
+
+            yield return new WaitForSeconds(0.5f);
 
             gameManager.NotMatch();
 
         }
         else
         {
-            yield return new WaitForSeconds(1);
+            gameManager.timeIsRunning = false;
+
+            yield return new WaitForSeconds(0.5f);
 
             gameManager.Match(); 
 

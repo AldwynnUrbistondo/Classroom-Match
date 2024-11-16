@@ -52,10 +52,22 @@ public class GameManager : MonoBehaviour
 
     public Animator popUpAnim;
     public Animator textMatchAnim;
+
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip matchSound;
+    public AudioClip notMatchSound;
+    public AudioClip timeOutSound;
+    public AudioClip gameOverSound;
     #endregion
 
     void Start()
     {
+        for (int i = 0; i < 20; i++)
+        {
+            ArrayCard.cardId[i] = -1;
+        }
+
         player1Score = 0;
         player2Score = 0;
 
@@ -135,7 +147,6 @@ public class GameManager : MonoBehaviour
 
     public void NotMatch()
     {
-        timeIsRunning = false;
 
         Card[] allCards = FindObjectsOfType<Card>();
         chosenCard1 = -1;
@@ -163,12 +174,18 @@ public class GameManager : MonoBehaviour
 
         if (timeOut == true)
         {
+            audioSource.clip = timeOutSound;
+            audioSource.Play();
+
             textMatch.text = "Time Out!";
             timeOut = false;
         }
         else
         {
             textMatch.text = "Failed!";
+
+            audioSource.clip = notMatchSound;
+            audioSource.Play();
         }
       
         textMatchAnim.SetTrigger("pop");
@@ -178,11 +195,13 @@ public class GameManager : MonoBehaviour
 
     public void Match()
     {
-        timeIsRunning = false;
 
         chosenCard1 = -1;
         chosenCard2 = -1;
-        
+
+        audioSource.clip = matchSound;
+        audioSource.Play();
+
         DestroyObjectWithCardID();
 
         targetID1 = -1;
@@ -281,6 +300,9 @@ public class GameManager : MonoBehaviour
     IEnumerator EndGame()
     {
         yield return new WaitForSeconds(1);
+
+        audioSource.clip = gameOverSound;
+        audioSource.Play();
 
         popUpBackground.enabled = true;
 
