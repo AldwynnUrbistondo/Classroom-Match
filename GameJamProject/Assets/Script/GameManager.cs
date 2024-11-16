@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject[] cardPrefabs;
     public Transform grid;
+    public Transform grid1;
 
     public bool canClick = true;
 
@@ -27,9 +28,9 @@ public class GameManager : MonoBehaviour
     int cardToSpawn;
 
     [Header("UI")]
-    public TextMeshProUGUI player1ScoreText;
+    //public TextMeshProUGUI player1ScoreText;
     public static int player1Score = 0;
-    public TextMeshProUGUI player2ScoreText;
+    //public TextMeshProUGUI player2ScoreText;
     public static int player2Score = 0;
 
     public bool player1Turn = false;
@@ -45,8 +46,8 @@ public class GameManager : MonoBehaviour
 
     [Header("PopUp")]
     public Image popUpBackground;
-    public Image p1Text;
-    public Image p2Text;
+    public TextMeshProUGUI p1Text;
+    public TextMeshProUGUI p2Text;
     public TextMeshProUGUI gameOverText;
     public TextMeshProUGUI textMatch;
 
@@ -60,6 +61,13 @@ public class GameManager : MonoBehaviour
     public AudioClip notMatchSound;
     public AudioClip timeOutSound;
     public AudioClip gameOverSound;
+    public AudioClip cardClickSound;
+
+    [Header("Points")]
+    public GameObject player1PointsImage;
+    public GameObject player2PointsImage;
+    public Transform player1PointsHolder;
+    public Transform player2PointsHolder;
 
     #endregion
 
@@ -118,7 +126,16 @@ public class GameManager : MonoBehaviour
                 {
                     yield return new WaitForSeconds(0.11f); 
 
-                    Instantiate(cardPrefabs[cardToSpawn], grid);
+                    if (i < 16)
+                    {
+                        Instantiate(cardPrefabs[cardToSpawn], grid);
+                    }
+                    else
+                    {
+                        Instantiate(cardPrefabs[cardToSpawn], grid1);
+                    }
+
+                    
 
                     card[cardToSpawn]++;
 
@@ -227,13 +244,17 @@ public class GameManager : MonoBehaviour
         if (player1Turn)
         {
             player1Score++;
-            player1ScoreText.text = $"Player 1: {player1Score}";
+            Instantiate(player1PointsImage, player1PointsHolder);
+
+            //player1ScoreText.text = $"Player 1: {player1Score}";
             Debug.Log("Player 1 got a point");
         }
         else if (player2Turn)
         {
             player2Score++;
-            player2ScoreText.text = $"Player 2: {player2Score}";
+            Instantiate(player2PointsImage, player2PointsHolder);
+
+            //player2ScoreText.text = $"Player 2: {player2Score}";
             Debug.Log("Player 2 got a point");
         }
 

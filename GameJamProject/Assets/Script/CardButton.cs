@@ -34,12 +34,18 @@ public class CardButton : MonoBehaviour
             {
                 if (gameManager.chosenCard1 == -1)
                 {
+                    gameManager.audioSource.clip = gameManager.cardClickSound;
+                    gameManager.audioSource.Play();
+
                     isChosen = true;
                     gameManager.chosenCard1 = cardValue;
                     button.gameObject.SetActive(false);
                 }
                 else
                 {
+                    gameManager.audioSource.clip = gameManager.cardClickSound;
+                    gameManager.audioSource.Play();
+
                     isChosen = true;
                     gameManager.chosenCard2 = cardValue;
                     button.gameObject.SetActive(false);

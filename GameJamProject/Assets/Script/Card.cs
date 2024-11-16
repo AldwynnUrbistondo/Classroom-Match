@@ -51,7 +51,7 @@ public class Card : MonoBehaviour
         {
             gameManager.timeIsRunning = false;
 
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
 
             gameManager.NotMatch();
 
@@ -60,7 +60,7 @@ public class Card : MonoBehaviour
         {
             gameManager.timeIsRunning = false;
 
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
 
             gameManager.Match(); 
 
