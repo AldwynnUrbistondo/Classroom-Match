@@ -55,6 +55,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Audio")]
     public AudioSource audioSource;
+    public AudioClip spawnSound;
     public AudioClip matchSound;
     public AudioClip notMatchSound;
     public AudioClip timeOutSound;
@@ -103,7 +104,9 @@ public class GameManager : MonoBehaviour
 
     IEnumerator SpawnAnim()
     {
-        
+        audioSource.clip = spawnSound;
+        bool isPlayingSound = false;
+
         for (int i = 0; i < 20; i++)
         {
             while (true)
@@ -112,10 +115,17 @@ public class GameManager : MonoBehaviour
 
                 if (card[cardToSpawn] != 2)
                 {
-                    yield return new WaitForSeconds(0.1f);
+                    yield return new WaitForSeconds(0.11f); 
+
                     Instantiate(cardPrefabs[cardToSpawn], grid);
 
                     card[cardToSpawn]++;
+
+                    if(isPlayingSound == false)
+                    {
+                        audioSource.Play();
+                        isPlayingSound = true;
+                    }
 
                     break;
                 }
