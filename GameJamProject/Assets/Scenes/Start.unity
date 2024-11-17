@@ -156,8 +156,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 69779c986a2afd84abe9c0755787b474, type: 3}
   - {fileID: 21300000, guid: 4360175c1c135ea4198d5f339962ee26, type: 3}
   - {fileID: 21300000, guid: 62388bbd4de0ab1448b17f70e3d13e5c, type: 3}
-  - {fileID: 21300000, guid: 52cf165592f72df4ab87b91a6869a958, type: 3}
-  - {fileID: 21300000, guid: a9c4472cea638024baeaa436f8507f7f, type: 3}
+  - {fileID: 21300000, guid: afb76dea65309404383a5c1204cc4aa5, type: 3}
+  - {fileID: 21300000, guid: a6f6e2adae88da44a8ca90908c4dfbaa, type: 3}
   Tutorial_image: {fileID: 285322005}
   hotdog: 0
   previousButton: {fileID: 580168361}
