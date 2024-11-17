@@ -10,4 +10,8 @@ public class Scene : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void alisNa()
+    {
+        Application.Quit();
+    }
 }
