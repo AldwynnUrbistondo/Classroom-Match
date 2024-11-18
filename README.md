@@ -1,17 +1,43 @@
-Game Title
+##Game Title
 Classroom Match
 
-Team Name
+##Team Name
 Level-Up Legions
 
-Technical Stack
-The tools and technologies used to create the game are as follows:
-Game Engine: Unity
-Programming Language: C#
-3D Background Creation Tool: Roblox Studio
-Art Tools: Canva Pro, Ibis Paint
-Audio Sources: Royalty-Free Music, Pixabay
+##Technical Stack
+The following tools and technologies were utilized in the development of Classroom Match:
 
-Gameplay Overview
-Our type of game is a memory card game where the player has to memorize the cards that the player chooses and match those cards by the card's similarity. The card game will display the card's icon once a player opens it and it will close after the player has chosen another card or when the timer runs out. The cards will be removed once the player matches the cards, the game is for two players and whoever gets the most matched cards wins. This game requires accurate memory skills and luck to beat.
+•Game Engine:
+Unity – A powerful and versatile game engine used to create the core game mechanics, animations, and player interactions.
 
+•Programming Language:
+C# – Used for scripting gameplay logic, managing game state, and player interactions.
+
+•Integrated Development Environment (IDE):
+Visual Studio 2022 – Employed for efficient code writing, debugging, and testing.
+
+•3D Background Creation Tool:
+Roblox Studio – Used to design and export 3D backgrounds.
+
+•Art and Design Tools:
+ - Canva Pro – Utilized to design user interface elements, layouts, and other 2D graphics.
+ - Ibis Paint – Used for creating detailed illustrations and custom game assets.
+ - 
+•	Audio Sources:
+ - Royalty-Free Music – For background music and sound effects.
+ - Pixabay – For additional sound assets that enhance the gaming experience.
+ - 
+•Typography:
+Gaegu – A custom font used to enhance in-game text's visual appeal and readability.
+
+
+##Gameplay Overview
+
+Classroom Match is a multiplayer memory card game designed for two players. The objective is to memorize and match pairs of cards based on their icons.
+How It Works:
+1.	The game begins with all cards face down.
+2.	Players take turns selecting two cards to reveal their icons.
+3.	If the cards match, they are removed from the board.
+4.	If the cards do not match, they are flipped back down, and the next player takes their turn.
+5.	The game ends when all cards are matched, and the player with the most matches wins.
+This game challenges players' memory skills and introduces an element of luck to keep gameplay exciting and competitive.
