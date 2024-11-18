@@ -22,7 +22,7 @@ Roblox Studio – Used to design and export 3D backgrounds.
 •Art and Design Tools:
  - Canva Pro – Utilized to design user interface elements, layouts, and other 2D graphics.
  - Ibis Paint – Used for creating detailed illustrations and custom game assets.
- - 
+
 •	Audio Sources:
  - Royalty-Free Music – For background music and sound effects.
  - Pixabay – For additional sound assets that enhance the gaming experience.
