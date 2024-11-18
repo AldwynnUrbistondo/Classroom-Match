@@ -26,7 +26,7 @@ Roblox Studio – Used to design and export 3D backgrounds.
 •	Audio Sources:
  - Royalty-Free Music – For background music and sound effects.
  - Pixabay – For additional sound assets that enhance the gaming experience.
- - 
+
 •Typography:
 Gaegu – A custom font used to enhance in-game text's visual appeal and readability.
 
